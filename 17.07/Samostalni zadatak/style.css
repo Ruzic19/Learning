@@ -1,0 +1,16 @@
+body {
+    color: #fff;
+    background-color: #777;
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    /*background: background-color backround-image background-position/background-size background-repeat background-attachment*/
+    background: url(../images/fire.png) center 30%/40% no-repeat fixed,
+                url(../images/pattern.png),
+                url(../images/blossom.jpg) center center/auto repeat fixed
+}
+
+h1 {
+    text-align: center ;
+    background-color: #777;
+}
+
