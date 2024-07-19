@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+/*Prvo stavljam generalni styling koji ce se primjeniti na svaki element*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/\ background.jpg");
+    font-family: "Playwrite pl";
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+/*Pogledati ponovno Display elements na Udemy courseu*/
+ul li a {
+    display: inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+/* Pogledati ponovno o pseudo elementima u w3school*/
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0px;
+    background: rgb(251,214,0);
+    transition: all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    /*ova funkcija calc je zato da se od 100% stranice oduzme 100px sto je stavljeno za headera*/
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    max-width: 670px;
+    height: auto;
+}
+
+.content-left {
+    width: 30%;
+}
+
+main h1 {
+    font-size: 54px;
+    color: #133b4f;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+
+main h2 {
+    font-size: 25px;
+    color: #133b4f;  
+    font-style: italic;
+}
+
+main p {
+    font-size: 15px;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.cta {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: rgb(251,214,0);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.signup-button {
+    background: rgb(251,214,0);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
